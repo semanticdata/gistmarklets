@@ -8,6 +8,7 @@ The gist is identified by placing its id in the hash.
 - Make it so you can use whole Gist URL instead of just the Gist ID.
 - Investigate using a single file from a Gist.
   This would allow users to have a single Gist with multiple bookmarklets.
+- Swap current jQuery Bookmarlet Helper with a new fork.
 
 ## 💜 Attributions
 
