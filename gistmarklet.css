@@ -1,19 +1,24 @@
 #header {
     background: #f5f5f5;
     -webkit-linear-gradient(top, #F9F9F9, #F3F3F3);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#f3f3f3'); /* for IE */
-    background: -webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(#f3f3f3)); /* for webkit browsers */
-    background: -moz-linear-gradient(top,  #f9f9f9,  #f3f3f3); /* for firefox 3.6+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#f3f3f3');
+    /* for IE */
+    background: -webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(#f3f3f3));
+    /* for webkit browsers */
+    background: -moz-linear-gradient(top, #f9f9f9, #f3f3f3);
+    /* for firefox 3.6+ */
     border-bottom: 1px solid #E5E5E5;
-
 }
+
 #header img {
     vertical-align: middle;
 }
+
 #header .button {
     vertical-align: middle;
     margin: 0;
 }
+
 #header input {
     width: 75px;
     vertical-align: middle;
@@ -29,14 +34,17 @@
 #loading {
     padding-top: 50px;
 }
+
 #demo {
     padding-top: 20px;
     border: 1px solid darkgrey;
     text-align: center;
 }
+
 #demo-gist {
     margin-top: 25px;
 }
+
 .example-title {
     padding-top: 50px;
     text-align: center;
@@ -47,19 +55,25 @@
     padding-top: 70px;
     text-align: center;
 }
+
 #note {
     padding-top: 70px;
     color: #888;
 }
 
 /* override skeleton header font */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 hr.large {
-border: none;
-height: 8px;
-background: #EBEBEB;
-margin: 50px 0;
+    border: none;
+    height: 8px;
+    background: #EBEBEB;
+    margin: 50px 0;
 }
