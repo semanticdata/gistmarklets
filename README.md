@@ -4,7 +4,9 @@ A small tool designed to simplify the creation of **Bookmarklets** from [GitHub 
 
 <p align=center>
 <br />
+  <a href="https://semanticdata.github.io/gistmarklets/">
 <img src="https://img.shields.io/badge/Check%20out%20the%20Demo-F0E68C?style=for-the-badge&link=https%3A%2F%2Fsemanticdata.github.io%2Fgistmarklets%2F" alt="demo" height="34px"; />
+  </a>
 </p>
 
 ## 🖼 Screenshot
