@@ -34,42 +34,45 @@
     <script type="text/javascript" src="src/js/gistmarklet.js"></script>
 
     <style>
+      :root {
+          --size-step--2: clamp(0.6944rem, 0.6856rem + 0.0444vi, 0.72rem);
+          --size-step--1: clamp(0.8333rem, 0.8101rem + 0.1159vi, 0.9rem);
+          --size-step-0: clamp(1rem, 0.9565rem + 0.2174vi, 1.125rem);
+          --size-step-1: clamp(1.2rem, 1.1283rem + 0.3587vi, 1.4063rem);
+          --size-step-2: clamp(1.44rem, 1.3295rem + 0.5527vi, 1.7578rem);
+          --size-step-3: clamp(1.728rem, 1.5648rem + 0.8161vi, 2.1973rem);
+          --size-step-4: clamp(2.0736rem, 1.8395rem + 1.1704vi, 2.7466rem);
+          --size-step-5: clamp(2.4883rem, 2.1597rem + 1.6433vi, 3.4332rem);
+      }
       body {
-
           font: 14px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
           color: #444;
           display: flex;
           flex-direction: column;
           height: calc(100vh - 1.5rem);
       }
-
       main {
           <!--width: 40rem;-->
           margin-inline: auto;
           flex-grow: 1;
           padding: 2rem;
       }
-
       footer {
         padding-inline: 4rem;
         display: none;
       }
-
       #header {
           background: #f5f5f5;
           border-bottom: 1px solid #E5E5E5;
           padding-inline: 2rem;
       }
-
       #header img {
           vertical-align: middle;
       }
-
       #header .button {
           vertical-align: middle;
           margin: 0;
       }
-
       #header input {
           width: 8rem;
           vertical-align: middle;
@@ -77,31 +80,24 @@
           display: inline;
         color: #00000050;
       }
-
       #landing {}
-
       #loading {}
-
       #demo {
           padding-top: 2rem;
           border: 1px solid darkgrey;
           text-align: center;
       }
-
       #demo-gist {
           margin-top: 2rem;
       }
-
       .example-title {
           padding-top: 2rem;
           text-align: center;
       }
-
       #gistmarklet {
           padding-top: 2rem;
           text-align: center;
       }
-
       #note {
           padding-top: 2rem12:21 PM 6/6/2024;
           color: #888;
@@ -115,7 +111,6 @@
           height:1.5rem;
           margin-block: 0.5rem;
       }
-
       h1,
       h2,
       h3,
@@ -126,7 +121,6 @@
           font-family: "Georgia", "Times New Roman", serif;
           font-weight: normal;
       }
-
       h1 a,
       h2 a,
       h3 a,
@@ -135,68 +129,63 @@
       h6 a {
           font-weight: inherit;
       }
-
       h1 {
-          font-size: 46px;
-          line-height: 50px;
-          margin-bottom: 14px;
+/*           font-size: 46px; */
+          font-size: var(--size-step-4);
+/*           line-height: 50px; */
+          margin-bottom: 1rem;
       }
-
       h2 {
-          font-size: 35px;
-          line-height: 40px;
-          margin-bottom: 10px;
+          font-size: var(--size-step-3);
+/*           font-size: 35px; */
+/*           line-height: 40px; */
+          margin-bottom: 1rem;
       }
-
       h3 {
-          font-size: 28px;
-          line-height: 34px;
-          margin-bottom: 8px;
+        font-size: var(--size-step-2);
+/*           font-size: 28px; */
+/*           line-height: 34px; */
+          margin-bottom: 0.75rem;
       }
-
       h4 {
-          font-size: 21px;
-          line-height: 30px;
-          margin-bottom: 4px;
+        font-size: var(--size-step-1);
+/*           font-size: 21px; */
+/*           line-height: 30px; */
+          margin-bottom: 0.75rem;
       }
-
       h5 {
-          font-size: 17px;
-          line-height: 24px;
+        font-size: var(--size-step-1);
+/*           font-size: 17px; */
+/*           line-height: 24px; */
       }
-
       h6 {
-          font-size: 14px;
-          line-height: 21px;
+        font-size: var(--size-step-1);
+/*           font-size: 14px; */
+/*           line-height: 21px; */
       }
-
       .subheader {
-          color: #777;
+/*           color: #777; */
+          color: #5e5e5e;
       }
-
       p {
           margin: 0 0 20px 0;
       }
-
       p img {
           margin: 0;
       }
-
       p.lead {
           font-size: 21px;
           line-height: 27px;
-          color: #777;
+/*           color: #777; */
+        color: #5e5e5e;
       }
-
       em {
           font-style: italic;
       }
-
       strong {
           font-weight: bold;
           color: #333;
       }
-
       small {
           font-size: 80%;
       }
