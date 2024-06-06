@@ -38,23 +38,30 @@
 
     <style>
       body {
-          max-width: 50rem;
-          width: 40rem;
-          margin-inline: auto;
+
           font: 14px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
           color: #444;
+          display: flex;
+          flex-direction: column;
+          height: calc(100vh - 1.5rem);
       }
 
       main {
-          /*background-color: PaleTurquoise;
-        background-color: PaleVioletRed;
-        background-color: PaleGreen;
-        background-color: PaleGoldenrod;*/
+          width: 40rem;
+          margin-inline: auto;
+          flex-grow: 1;
+          padding-block: 2rem;
+      }
+
+      footer {
+        padding-inline: 4rem;
+        display: none;
       }
 
       #header {
           background: #f5f5f5;
           border-bottom: 1px solid #E5E5E5;
+          padding-inline: 2rem;
       }
 
       #header img {
@@ -100,6 +107,15 @@
       #note {
           padding-top: 2rem12:21 PM 6/6/2024;
           color: #888;
+      }
+      #fork-icon {
+          position: absolute;
+          top: 0;
+          right: 1rem;
+          border: 0;
+          width:1.5rem;
+          height:1.5rem;
+          margin-block: 0.5rem;
       }
 
       h1,
@@ -200,6 +216,7 @@
     <main>
       <a href="https://github.com/semanticdata/gistmarklets"
         ><img
+          id="fork-icon"
           style="position: absolute; top: 0; right: 1rem; border: 0; width:1.5rem; height:1.5rem; margin-block: 0.5rem;"
           src="src/images/fork.svg"
           alt="GitHub"
@@ -239,10 +256,9 @@
 
           <p
             >Simply add the ID of your Gist in the input in the top bar or as
-            the hash on this url</p
+            the hash on this url.</p
           >
-          <p>Try <a href="#3875317">Gist 3875317</a></p>
-          <p style="color:#888">Note: IE not fully supported yet</p>
+          <p>For example, try <a href="#3875317">Gist 3875317</a></p>
         </div>
 
         <div id="loading" style="display:none">
@@ -258,8 +274,16 @@
         </div>
       </div>
     </main>
+
     <footer>
-      <p>I'm in the footer.</p>
+      <hr />
+      <p
+        ><a
+          href="https://github.com/semanticdata/gistmarklets"
+          alt="source code"
+          >Source</a
+        ></p
+      >
     </footer>
   </body>
 </html>
