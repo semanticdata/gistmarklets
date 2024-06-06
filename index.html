@@ -1,98 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>GistMarklets</title>
-    <meta name="description" content="Simple installation pages for
-    bookmarklets hosted as Gists">
-    <meta name="author" content="Daniel Schep">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta
+      name="description"
+      content="Simple installation pages for
+    bookmarklets hosted as Gists"
+    />
+    <meta name="author" content="Daniel Schep" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
 
-    <link rel="stylesheet" href="src/css/base.css">
+    <link rel="stylesheet" href="src/css/base.css" />
+
+    <!--
+    <link rel="stylesheet" href="src/css/layout.css">    
+    <link rel="stylesheet" href="src/css/main.css">
     <link rel="stylesheet" href="src/css/skeleton.css">
-    <link rel="stylesheet" href="src/css/layout.css">
+    -->
 
     <link rel="icon" type="image/png" href="src/images/favicon_64.png" />
-    <link rel="shortcut icon" href="src/images/favicon.ico">
+    <link rel="shortcut icon" href="src/images/favicon.ico" />
 
-    <link rel="stylesheet" href="src/js/gistmarklet.css">
-    <!-- <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script> -->
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!--
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    -->
+
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    ></script>
     <script type="text/javascript" src="src/js/jquery.bookmarklet.js"></script>
     <script type="text/javascript" src="src/js/gistmarklet.js"></script>
-</head>
 
-<body>
+    <style>
+      body {
+          max-width: 50rem;
+          width: 40rem;
+          margin-inline: auto;
+          font: 14px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+          color: #444;
+      }
+
+      main {
+          /*background-color: PaleTurquoise;
+        background-color: PaleVioletRed;
+        background-color: PaleGreen;
+        background-color: PaleGoldenrod;*/
+      }
+
+      #header {
+          background: #f5f5f5;
+          border-bottom: 1px solid #E5E5E5;
+      }
+
+      #header img {
+          vertical-align: middle;
+      }
+
+      #header .button {
+          vertical-align: middle;
+          margin: 0;
+      }
+
+      #header input {
+          width: 75px;
+          vertical-align: middle;
+          margin: 0;
+          display: inline;
+      }
+
+      #landing {}
+
+      #loading {}
+
+      #demo {
+          padding-top: 2rem;
+          border: 1px solid darkgrey;
+          text-align: center;
+      }
+
+      #demo-gist {
+          margin-top: 2rem;
+      }
+
+      .example-title {
+          padding-top: 2rem;
+          text-align: center;
+      }
+
+      #gistmarklet {
+          padding-top: 2rem;
+          text-align: center;
+      }
+
+      #note {
+          padding-top: 2rem12:21 PM 6/6/2024;
+          color: #888;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+          color: #181818;
+          font-family: "Georgia", "Times New Roman", serif;
+          font-weight: normal;
+      }
+
+      h1 a,
+      h2 a,
+      h3 a,
+      h4 a,
+      h5 a,
+      h6 a {
+          font-weight: inherit;
+      }
+
+      h1 {
+          font-size: 46px;
+          line-height: 50px;
+          margin-bottom: 14px;
+      }
+
+      h2 {
+          font-size: 35px;
+          line-height: 40px;
+          margin-bottom: 10px;
+      }
+
+      h3 {
+          font-size: 28px;
+          line-height: 34px;
+          margin-bottom: 8px;
+      }
+
+      h4 {
+          font-size: 21px;
+          line-height: 30px;
+          margin-bottom: 4px;
+      }
+
+      h5 {
+          font-size: 17px;
+          line-height: 24px;
+      }
+
+      h6 {
+          font-size: 14px;
+          line-height: 21px;
+      }
+
+      .subheader {
+          color: #777;
+      }
+
+      p {
+          margin: 0 0 20px 0;
+      }
+
+      p img {
+          margin: 0;
+      }
+
+      p.lead {
+          font-size: 21px;
+          line-height: 27px;
+          color: #777;
+      }
+
+      em {
+          font-style: italic;
+      }
+
+      strong {
+          font-weight: bold;
+          color: #333;
+      }
+
+      small {
+          font-size: 80%;
+      }
+    </style>
+  </head>
+
+  <body>
     <header id="header">
-        <div class="container">
-            <a href="#"><img src="src/images/textual-logo.png"></img></a>
-            <input type="text" placeholder="Gist ID"></input>
-            <a class="button" href="javascript:void(0)">Load Gist</a>
-        </div>
+      <div class="container">
+        <a href="#"><img src="src/images/textual-logo.png" /></a>
+        <input type="text" placeholder="Gist ID" />
+        <a class="button" href="javascript:void(0)">Load Gist</a>
+      </div>
     </header>
     <main>
-        <a href="https://github.com/semanticdata/gistmarklets"><img
-                style="position: absolute; top: 0; right: 0; border: 0; width:4rem; height:4rem;"
-                src="src/images/fork.svg" alt="GitHub" /></a>
+      <a href="https://github.com/semanticdata/gistmarklets"
+        ><img
+          style="position: absolute; top: 0; right: 1rem; border: 0; width:1.5rem; height:1.5rem; margin-block: 0.5rem;"
+          src="src/images/fork.svg"
+          alt="GitHub"
+      /></a>
 
-        <!-- <div id="header">
+      <!-- <div id="header">
             <div class="container">
-                <a href="#"><img src="src/images/textual-logo.png"></img></a>
-                <input type="text" placeholder="Gist ID"></input>
+                <a href="#"><img src="src/images/textual-logo.png" /></a>
+                <input type="text" placeholder="Gist ID" />
                 <a class="button" href="javascript:void(0)">Load Gist</a>
             </div>
         </div> -->
 
-        <div class="container">
-            <div id="landing" style="display:none">
-                <h1 style="text-align:center">Make easy to install bookmarlets with
-                    <a href="http://gist.github.com/">Gists</a>.
-                </h1>
+      <div class="container">
+        <div id="landing" style="display:none">
+          <h1 style="text-align:center"
+            >Make easy to install bookmarlets with
+            <a href="http://gist.github.com/">Gists</a>.
+          </h1>
 
-                <div class="clearfix">
-                    <h4 class="eight columns alpha example-title">
-                        Turn this
-                    </h4>
-                    <h4 class="eight columns omega example-title">
-                        Into this
-                    </h4>
+          <div class="clearfix">
+            <h4 class="eight columns alpha example-title"> Turn this </h4>
+            <h4 class="eight columns omega example-title"> Into this </h4>
 
-                    <div class="eight columns alpha" id="demo-gist">
-                        <script src="https://gist.github.com/3886934.js"> </script>
-                    </div>
-                    <div class="eight columns omega" id="demo">
-                        <p>Drag This button to your bookmarks bar</p>
-                        <a class="button" href="javascript:alert('hello world!');">Alert Bookmarklet</a>
-                    </div>
-                </div>
-
-                <hr class="large" />
-
-                <p>Simply add the ID of your Gist in the input in the top bar or
-                    as the hash on this url</p>
-                <p>Try <a href="#3875317">Gist 3875317</a></p>
-                <p style="color:#888">Note: IE not fully supported yet</p>
+            <div class="eight columns alpha" id="demo-gist">
+              <script src="https://gist.github.com/3886934.js"></script>
             </div>
-
-
-            <div id="loading" style="display:none">
-                <h3>Loading Gist &hellip;</h3>
+            <div class="eight columns omega" id="demo">
+              <p>Drag This button to your bookmarks bar</p>
+              <a class="button" href="javascript:alert('hello world!');"
+                >Alert Bookmarklet</a
+              >
             </div>
+          </div>
 
+          <hr class="large" />
 
-            <div id="gistmarklet" style="display:none">
-                <p>Drag This button to your bookmarks bar</p>
-                <a class="button"></a>
-                <br>
-                <a id="source">Source</a>
-                <div id="note"></div>
-            </div>
+          <p
+            >Simply add the ID of your Gist in the input in the top bar or as
+            the hash on this url</p
+          >
+          <p>Try <a href="#3875317">Gist 3875317</a></p>
+          <p style="color:#888">Note: IE not fully supported yet</p>
         </div>
+
+        <div id="loading" style="display:none">
+          <h3>Loading Gist &hellip;</h3>
+        </div>
+
+        <div id="gistmarklet" style="display:none">
+          <p>Drag This button to your bookmarks bar</p>
+          <a class="button"></a>
+          <br />
+          <a id="source">Source</a>
+          <div id="note"></div>
+        </div>
+      </div>
     </main>
     <footer>
-        <p>I'm in the footer.</p>
+      <p>I'm in the footer.</p>
     </footer>
-</body>
-
+  </body>
 </html>
