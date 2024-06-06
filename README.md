@@ -1,8 +1,11 @@
 # 🔖 GistMarklets
 
-A small tool designed to simplify the creation of **Bookmarklets** from GitHub Gists. You can achieve this simply by providing the Gist ID.
+A small tool designed to simplify the creation of **Bookmarklets** from [GitHub Gists](https://gists.github.com/). You can achieve this simply by providing the Gist ID.
 
-Take a look at the [DEMO](https://semanticdata.github.io/gistmarklets/).
+<p align=center>
+<br />
+<img src="https://img.shields.io/badge/Check%20out%20the%20Demo-F0E68C?style=for-the-badge&link=https%3A%2F%2Fsemanticdata.github.io%2Fgistmarklets%2F" alt="demo" height="34px"; />
+</p>
 
 ## 🖼 Screenshot
 
