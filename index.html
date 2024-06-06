@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <title>GistMarklets</title>
@@ -23,62 +24,75 @@
 </head>
 
 <body>
-    <a href="https://github.com/semanticdata/gistmarklets"><img style="position: absolute; top: 0; right: 0; border: 0; width:4rem; height:4rem;"
-            src="src/images/fork.svg" alt="GitHub" /></a>
-
-    <div id="header">
+    <header id="header">
         <div class="container">
             <a href="#"><img src="src/images/textual-logo.png"></img></a>
             <input type="text" placeholder="Gist ID"></input>
             <a class="button" href="javascript:void(0)">Load Gist</a>
         </div>
-    </div>
+    </header>
+    <main>
+        <a href="https://github.com/semanticdata/gistmarklets"><img
+                style="position: absolute; top: 0; right: 0; border: 0; width:4rem; height:4rem;"
+                src="src/images/fork.svg" alt="GitHub" /></a>
 
-    <div class="container">
-        <div id="landing" style="display:none">
-            <h1 style="text-align:center">Make easy to install bookmarlets with
-                <a href="http://gist.github.com/">Gists</a>.
-            </h1>
+        <!-- <div id="header">
+            <div class="container">
+                <a href="#"><img src="src/images/textual-logo.png"></img></a>
+                <input type="text" placeholder="Gist ID"></input>
+                <a class="button" href="javascript:void(0)">Load Gist</a>
+            </div>
+        </div> -->
 
-            <div class="clearfix">
-                <h4 class="eight columns alpha example-title">
-                    Turn this
-                </h4>
-                <h4 class="eight columns omega example-title">
-                    Into this
-                </h4>
+        <div class="container">
+            <div id="landing" style="display:none">
+                <h1 style="text-align:center">Make easy to install bookmarlets with
+                    <a href="http://gist.github.com/">Gists</a>.
+                </h1>
 
-                <div class="eight columns alpha" id="demo-gist">
-                    <script src="https://gist.github.com/3886934.js"> </script>
+                <div class="clearfix">
+                    <h4 class="eight columns alpha example-title">
+                        Turn this
+                    </h4>
+                    <h4 class="eight columns omega example-title">
+                        Into this
+                    </h4>
+
+                    <div class="eight columns alpha" id="demo-gist">
+                        <script src="https://gist.github.com/3886934.js"> </script>
+                    </div>
+                    <div class="eight columns omega" id="demo">
+                        <p>Drag This button to your bookmarks bar</p>
+                        <a class="button" href="javascript:alert('hello world!');">Alert Bookmarklet</a>
+                    </div>
                 </div>
-                <div class="eight columns omega" id="demo">
-                    <p>Drag This button to your bookmarks bar</p>
-                    <a class="button" href="javascript:alert('hello world!');">Alert Bookmarklet</a>
-                </div>
+
+                <hr class="large" />
+
+                <p>Simply add the ID of your Gist in the input in the top bar or
+                    as the hash on this url</p>
+                <p>Try <a href="#3875317">Gist 3875317</a></p>
+                <p style="color:#888">Note: IE not fully supported yet</p>
             </div>
 
-            <hr class="large" />
 
-            <p>Simply add the ID of your Gist in the input in the top bar or
-                as the hash on this url</p>
-            <p>Try <a href="#3875317">Gist 3875317</a></p>
-            <p style="color:#888">Note: IE not fully supported yet</p>
+            <div id="loading" style="display:none">
+                <h3>Loading Gist &hellip;</h3>
+            </div>
+
+
+            <div id="gistmarklet" style="display:none">
+                <p>Drag This button to your bookmarks bar</p>
+                <a class="button"></a>
+                <br>
+                <a id="source">Source</a>
+                <div id="note"></div>
+            </div>
         </div>
-
-
-        <div id="loading" style="display:none">
-            <h3>Loading Gist &hellip;</h3>
-        </div>
-
-
-        <div id="gistmarklet" style="display:none">
-            <p>Drag This button to your bookmarks bar</p>
-            <a class="button"></a>
-            <br>
-            <a id="source">Source</a>
-            <div id="note"></div>
-        </div>
-    </div>
+    </main>
+    <footer>
+        <p>I'm in the footer.</p>
+    </footer>
 </body>
 
 </html>
