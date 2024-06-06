@@ -4,7 +4,15 @@ A small tool designed to simplify the creation of **Bookmarklets** from GitHub G
 
 Take a look at the [DEMO](https://semanticdata.github.io/gistmarklets/).
 
-## jQuery Bookmarlet Helper
+## 🖼 Screenshot
+
+<div align=center>
+
+| ![screenshot](screenshot.png) |
+| --- |
+</div>
+
+## 🔎 jQuery Bookmarlet Helper
 
 The [jQuery Bookmarlet Helper](jquery.bookmarklet.js) file is a small plugin to help installing bookmarklets.
 
