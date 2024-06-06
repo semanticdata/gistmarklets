@@ -21,11 +21,12 @@ $('a').bookmarklet({color: 'ff0000', position: 300, linewidth: 5})
 
 ## 📅 Planned Changes
 
-- Integrate jQuery Bookmarlet Helper into this repo instead of a submodule.
+- ✅ Integrate jQuery Bookmarlet Helper into this repo instead of a submodule.
+- ✅ Create new GitHub Workflow to publish the site using GitHub Actions.
+- ✅ Migrate into a new `src/` folder, only leaving `index.html` in the root.
 - Make it so you can use whole Gist URL instead of just the Gist ID.
 - Investigate using a single file from a Gist.
   This would allow users to have a single Gist with multiple bookmarklets.
-- Swap current jQuery Bookmarlet Helper with a new fork.
 
 ## 💜 Attributions
 
